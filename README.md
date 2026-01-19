@@ -21,7 +21,7 @@ such as web ports, login pages, APIs, forms, exposed directories, and technologi
 - Web form and file upload detection
 - Technology fingerprinting (WhatWeb)
 - Risk classification
-- HTML/PDF reporting
+- JSON reporting
 
 ## Platform
 
