@@ -7,7 +7,7 @@ class HttpClient:
             "User-Agent": "AttackSurfaceMapper/1.0"
         }
 
-        def get(self, url):
+    def get(self, url):
             try:
                 response = requests.get(
                     url,
@@ -19,7 +19,7 @@ class HttpClient:
             except requests.RequestException:
                 return None
         
-        def head(self, url):
+    def head(self, url):
             try: 
                 response = requests.head(
                     url,

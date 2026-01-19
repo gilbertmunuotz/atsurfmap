@@ -1,0 +1,59 @@
+{
+    "target": "https://example.com",
+    "scan_time": "2026-01-19T20:41:42.707944",
+    "findings": {
+        "missing_headers": [
+            "Content-Security-Policy",
+            "Strict-Transport-Security",
+            "X-Frame-Options",
+            "X-Content-Type-Options",
+            "Referrer-Policy"
+        ],
+        "auth_endpoints": [],
+        "directories": [],
+        "open_ports": [
+            {
+                "port": 22,
+                "service": "SSH"
+            },
+            {
+                "port": 80,
+                "service": "HTTP"
+            },
+            {
+                "port": 443,
+                "service": "HTTPS"
+            },
+            {
+                "port": 8080,
+                "service": "HTTP-Alt"
+            },
+            {
+                "port": 8443,
+                "service": "HTTPS-Alt"
+            }
+        ]
+    },
+    "risk_analysis": [
+        {
+            "issue": "Missing security headers",
+            "risk": "MEDIUM",
+            "impact": "Increased risk of XSS, clickjacking, and data injection"
+        },
+        {
+            "issue": "SSH service exposed",
+            "risk": "HIGH",
+            "impact": "Remote administrative access may be targeted"
+        },
+        {
+            "issue": "Alternative web service ports exposed",
+            "risk": "MEDIUM",
+            "impact": "May expose admin panels or test services"
+        },
+        {
+            "issue": "Alternative web service ports exposed",
+            "risk": "MEDIUM",
+            "impact": "May expose admin panels or test services"
+        }
+    ]
+}
