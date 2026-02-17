@@ -1,0 +1,47 @@
+# Python bytecode & caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# Editors & IDEs
+.idea/
+.vscode/
+*.sublime-*
+
+# Testing & linting caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Packaging & distribution
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# macOS junk
+.DS_Store
+
+# Optional: large data files, notebooks you don't want to commit
+*.ipynb_checkpoints/
+data/
+notebooks/*.ipynb  # ← only if you don't want to version notebooks
