@@ -13,7 +13,8 @@ class HttpClient:
                     url,
                     headers=self.headers,
                     timeout=self.timeout,
-                    allow_redirects=True
+                    allow_redirects=True,
+                    verify=False
                 )
                 return response
             except requests.RequestException:
@@ -25,7 +26,8 @@ class HttpClient:
                     url,
                     headers=self.headers,
                     timeout=self.timeout,
-                    allow_redirects=True
+                    allow_redirects=True,
+                    verify=False
                 )
                 return response
             except requests.RequestException:
